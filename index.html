@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>J&amp;K Cleaning Service Inc. | House and Office Cleaning in Des Plaines and the North Shore</title>
+<meta name="description" content="Professional house and office cleaning for the North Shore suburbs of Chicago. Trained crews, green cleaning options and a quality check on every task. Call 224-628-0586 for a quote.">
+<meta name="theme-color" content="#0a4a8f">
+<link rel="icon" href="assets/images/logo.png">
+<style>
+@font-face{font-family:'Nunito';font-weight:200 1000;font-display:swap;src:url(assets/fonts/nunito.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-weight:100 900;font-display:swap;src:url(assets/fonts/inter.woff2) format('woff2')}
+:root{
+  --navy:#0a2f63;--blue:#0e6ec1;--sky:#e9f4fc;--aqua:#2fb1e6;--green:#6bb52a;--green-d:#4f9419;--lime:#eef7e2;
+  --ink:#12253f;--muted:#586a82;--line:#dbe7f3;--bg:#f5faff;
+  --display:'Nunito',system-ui,sans-serif;--body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;--ease:cubic-bezier(.2,.7,.2,1)
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.65;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);margin:0;color:var(--navy);line-height:1.08;letter-spacing:-.015em}
+p{margin:0}
+.wrap{width:min(1200px,100% - 48px);margin-inline:auto}
+.sec{padding:104px 0}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
+.kicker::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--green)}
+.h2{font-size:clamp(34px,4.6vw,56px);font-weight:900}
+.h2 em{font-style:normal;color:var(--blue)}
+.lead{font-size:18px;color:var(--muted);max-width:620px}
+.sec-head{margin-bottom:52px}
+.sec-head.center{text-align:center}.sec-head.center .lead{margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--display);font-weight:800;font-size:17px;padding:16px 30px;border-radius:999px;border:2px solid transparent;cursor:pointer;line-height:1.1;white-space:nowrap;transition:transform .35s var(--ease),box-shadow .35s,background .3s,color .3s,border-color .3s}
+.btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.btn-green{background:var(--green);color:#fff;box-shadow:0 14px 28px -14px rgba(79,148,25,.9)}
+.btn-green:hover{background:var(--green-d);transform:translateY(-3px)}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 14px 28px -14px rgba(14,110,193,.9)}
+.btn-blue:hover{background:var(--navy);transform:translateY(-3px)}
+.btn-line{border-color:var(--navy);color:var(--navy)}
+.btn-line:hover{background:var(--navy);color:#fff}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0ms)}
+.rv.in{opacity:1;transform:none}
+.nojs .rv{opacity:1;transform:none}
+
+.top{background:var(--navy);color:#d7e6f8;font-size:14px}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;min-height:42px;padding:6px 0}
+.top a{display:inline-flex;align-items:center;gap:8px}
+.top a:hover{color:#fff}
+.top svg{width:16px;height:16px;fill:none;stroke:#9bdc55;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.top .l,.top .r{display:flex;gap:22px;flex-wrap:wrap}
+
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+header.scrolled{box-shadow:0 12px 30px -20px rgba(10,47,99,.5)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:92px}
+.logo img{height:74px;width:auto}
+.menu{display:flex;align-items:center;gap:32px;font-family:var(--display);font-weight:700;font-size:17px}
+.menu a:not(.btn){position:relative;padding:6px 0;color:var(--navy)}
+.menu a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:3px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.menu a:not(.btn):hover::after{transform:scaleX(1)}
+.menu .btn{padding:13px 24px;font-size:16px}
+.burger{display:none;width:48px;height:48px;border:1px solid var(--line);border-radius:14px;background:#fff;cursor:pointer;place-items:center;padding:0}
+.burger i,.burger i::before,.burger i::after{display:block;width:22px;height:2px;background:var(--navy);border-radius:2px;position:relative;transition:transform .3s,background .3s}
+.burger i::before,.burger i::after{content:"";position:absolute;left:0}
+.burger i::before{top:-7px}.burger i::after{top:7px}
+.burger[aria-expanded=true] i{background:transparent}
+.burger[aria-expanded=true] i::before{transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded=true] i::after{transform:translateY(-7px) rotate(-45deg)}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(180deg,var(--bg) 0%,#fff 100%);overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;right:-160px;top:-180px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(47,177,230,.22),transparent 66%);z-index:-1}
+.hero::after{content:"";position:absolute;left:-140px;bottom:-200px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(107,181,42,.2),transparent 66%);z-index:-1}
+.hero .grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:64px;align-items:center;padding:78px 0 96px}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:9px 18px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:700;font-size:14px;color:var(--navy);box-shadow:0 10px 20px -14px rgba(10,47,99,.5);margin-bottom:24px}
+.pill i{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(107,181,42,.25)}
+.hero h1{font-size:clamp(42px,5.6vw,72px);font-weight:900;margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--blue);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:10px;border-radius:10px;background:var(--green);opacity:.35;z-index:-1}
+.hero .sub{font-size:19px;color:var(--muted);max-width:540px;margin-bottom:34px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.ticks{display:flex;gap:22px;flex-wrap:wrap;margin-top:34px;font-weight:600;font-size:15.5px;color:var(--navy)}
+.ticks span{display:inline-flex;gap:8px;align-items:center}
+.ticks svg{width:20px;height:20px;fill:none;stroke:var(--green-d);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.hpic{position:relative}
+.hpic .main{width:100%;aspect-ratio:1/1.02;display:block;object-fit:cover;border-radius:36px;box-shadow:0 44px 70px -40px rgba(10,47,99,.6)}
+.hpic .sm{position:absolute;left:-36px;bottom:-30px;width:44%;aspect-ratio:4/3;object-fit:cover;border-radius:24px;border:6px solid #fff;box-shadow:0 30px 50px -26px rgba(10,47,99,.6)}
+.hpic .card{position:absolute;right:-14px;top:30px;background:#fff;border-radius:20px;padding:16px 20px;box-shadow:0 26px 44px -22px rgba(10,47,99,.55);display:flex;gap:14px;align-items:center}
+.card .ic{width:46px;height:46px;border-radius:14px;background:var(--lime);color:var(--green-d);display:grid;place-items:center}
+.card .ic svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card b{display:block;font-family:var(--display);font-size:22px;line-height:1.1;color:var(--navy);font-weight:900}
+.card span{font-size:13.5px;color:var(--muted)}
+
+/* trust */
+.trust{background:var(--navy);color:#fff}
+.trust .grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.tr{padding:34px 24px;display:flex;gap:16px;align-items:center;border-right:1px solid rgba(255,255,255,.14)}
+.tr:last-child{border:0}
+.tr .ic{flex:0 0 52px;height:52px;border-radius:16px;background:rgba(255,255,255,.1);color:#9bdc55;display:grid;place-items:center}
+.tr .ic svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.tr b{display:block;font-family:var(--display);font-size:22px;line-height:1.15;font-weight:900}
+.tr span{font-size:14.5px;color:#b9d0ec;line-height:1.4;display:block;margin-top:2px}
+
+/* about */
+.about .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:center}
+.collage{display:block}
+.collage img{width:100%;height:auto;display:block;aspect-ratio:4/3;object-fit:cover;border-radius:30px;box-shadow:0 30px 50px -34px rgba(10,47,99,.55)}
+.about p{color:var(--muted)}
+.about p+p{margin-top:16px}
+.about .h2{margin-bottom:22px}
+.vals{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.val{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:18px 20px;display:flex;gap:12px;align-items:flex-start;font-weight:600;color:var(--navy);font-size:15.5px;line-height:1.4}
+.val svg{flex:none;width:24px;height:24px;fill:none;stroke:var(--green-d);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
+
+/* services */
+.services{background:var(--bg)}
+.svc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:26px;overflow:hidden;transition:transform .45s var(--ease),box-shadow .45s;display:flex;flex-direction:column}
+.svc:hover{transform:translateY(-8px);box-shadow:0 36px 50px -30px rgba(10,47,99,.5)}
+.svc .pic{height:190px;overflow:hidden}
+.svc .pic img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.svc:hover .pic img{transform:scale(1.07)}
+.svc .bd{padding:0 24px 28px;flex:1}
+.svc .ico{width:60px;height:60px;border-radius:18px;margin:-30px 0 16px;border:4px solid #fff;display:grid;place-items:center;color:#fff;background:linear-gradient(145deg,var(--aqua),var(--blue));box-shadow:0 14px 24px -12px rgba(14,110,193,.8);position:relative}
+.svc:nth-child(even) .ico{background:linear-gradient(145deg,#8bd13f,var(--green-d))}
+.svc .ico svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.svc h3{font-size:25px;font-weight:900;margin-bottom:12px}
+.svc ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:15.5px;color:var(--muted)}
+.svc li{display:flex;gap:10px;align-items:flex-start;line-height:1.45}
+.svc li::before{content:"";flex:0 0 8px;height:8px;margin-top:8px;border-radius:50%;background:var(--green)}
+.extra{margin-top:30px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);background:var(--navy);border-radius:30px;overflow:hidden;color:#fff;box-shadow:0 40px 60px -40px rgba(10,47,99,.8)}
+.extra img{width:100%;height:100%;object-fit:cover;min-height:300px}
+.extra .t{padding:44px 46px;align-self:center}
+.extra h3{color:#fff;font-size:clamp(28px,3vw,38px);font-weight:900;margin-bottom:10px}
+.extra p{color:#c4d8f1;margin-bottom:22px}
+.extra ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 22px}
+.extra li{display:flex;gap:10px;font-weight:600;font-size:15.5px;line-height:1.4}
+.extra li svg{flex:none;width:20px;height:20px;fill:none;stroke:#9bdc55;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.supplies{margin-top:26px;display:flex;gap:14px;align-items:center;background:var(--lime);border:1px solid #d3e8b5;border-radius:20px;padding:20px 26px;color:#32520d;font-weight:600}
+.supplies svg{flex:none;width:28px;height:28px;fill:none;stroke:var(--green-d);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:16px}
+.gal img{width:100%;height:100%;object-fit:cover;border-radius:22px;transition:transform .6s var(--ease)}
+.gal figure{margin:0;overflow:hidden;border-radius:22px}
+.gal figure:hover img{transform:scale(1.06)}
+.gal .w2{grid-column:span 2}.gal .h2r{grid-row:span 2}.gal figure:nth-child(5),.gal figure:nth-child(6){grid-column:span 2}
+
+/* rates */
+.rates{background:linear-gradient(120deg,var(--navy),#0d4a92);color:#fff;position:relative;overflow:hidden;isolation:isolate}
+.rates::before{content:"";position:absolute;right:-120px;top:-140px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(107,181,42,.35),transparent 68%);z-index:-1}
+.rates .h2{color:#fff}.rates .h2 em{color:#9bdc55}.rates .lead{color:#c4d8f1}
+.rgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:10px}
+.rc{background:#fff;color:var(--ink);border-radius:28px;padding:38px 36px;box-shadow:0 40px 60px -36px rgba(0,0,0,.6);position:relative}
+.rc.f{border:3px solid var(--green)}
+.rc small{display:block;font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:8px}
+.rc .pr{font-family:var(--display);font-weight:900;font-size:clamp(54px,6vw,76px);line-height:1;color:var(--navy);letter-spacing:-.03em}
+.rc .pr sup{font-size:.45em;vertical-align:top;margin-right:2px;position:relative;top:.2em}
+.rc p{color:var(--muted);margin-top:10px}
+.rc .tag{position:absolute;right:26px;top:26px;background:var(--lime);color:var(--green-d);font-weight:800;font-size:13px;padding:7px 14px;border-radius:999px}
+.rnote{margin-top:26px;display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap;color:#d7e6f8;text-align:center}
+.rnote b{color:#fff}
+
+/* area */
+.area-wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+.ac{background:#fff;border:1px solid var(--line);border-radius:28px;padding:34px 34px 32px}
+.ac.alt{background:var(--bg)}
+.ac h3{font-size:26px;font-weight:900;margin-bottom:6px}
+.ac .day{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--green-d);margin-bottom:14px}
+.ac .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.ac .chip{display:inline-flex;gap:8px;align-items:center;background:var(--sky);color:var(--navy);font-weight:700;font-size:15.5px;border-radius:999px;padding:9px 16px}
+.ac.alt .chip{background:#fff;border:1px solid var(--line)}
+.ac .chip svg{width:16px;height:16px;fill:none;stroke:var(--blue);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.ac p{color:var(--muted);font-size:16px}
+
+/* contact */
+.contact{background:var(--bg)}
+.contact .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:56px;align-items:start}
+.cards{display:grid;gap:14px;margin-top:32px}
+.cc{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px 22px;transition:transform .35s var(--ease),box-shadow .3s,border-color .3s}
+a.cc:hover{transform:translateX(6px);border-color:#b9d3ee;box-shadow:0 18px 30px -22px rgba(10,47,99,.5)}
+.cc .ic{flex:0 0 52px;height:52px;border-radius:16px;background:linear-gradient(145deg,var(--aqua),var(--blue));color:#fff;display:grid;place-items:center}
+.cc .ic svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.cc small{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.cc b{font-family:var(--display);font-size:21px;color:var(--navy);font-weight:800;line-height:1.3;overflow-wrap:anywhere}
+.form{background:var(--navy);color:#fff;border-radius:30px;padding:42px 40px;box-shadow:0 40px 70px -40px rgba(10,47,99,.8);position:relative;overflow:hidden}
+.form::before{content:"";position:absolute;right:-90px;top:-90px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(107,181,42,.4),transparent 68%)}
+.form h3{color:#fff;font-size:32px;font-weight:900;margin-bottom:8px;position:relative}
+.form>p{color:#c4d8f1;font-size:16px;margin-bottom:24px;position:relative}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fld{margin-bottom:14px;position:relative}
+.fld label{display:block;font-size:13.5px;font-weight:700;margin-bottom:6px;color:#c4d8f1}
+.fld input,.fld select,.fld textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:#fff;border:2px solid transparent;border-radius:14px;padding:14px 16px;outline:none;transition:border-color .25s}
+.fld textarea{resize:vertical;min-height:100px}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--green)}
+.form .btn{width:100%;margin-top:6px}
+.fine{font-size:13.5px;color:#a9c4e6;margin-top:14px;text-align:center;position:relative}
+
+footer{background:#071f44;color:#b3c9e6;padding:66px 0 0}
+footer .grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:50px;padding-bottom:52px}
+footer .lg{background:#fff;border-radius:18px;padding:10px 16px;display:inline-block;margin-bottom:18px}
+footer .lg img{height:70px;width:auto}
+footer h4{font-family:var(--display);color:#fff;font-size:19px;margin:0 0 16px;font-weight:800}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:15.5px}
+footer a:hover{color:#fff}
+footer p{font-size:15.5px;max-width:340px}
+.bar{border-top:1px solid rgba(255,255,255,.12);padding:22px 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14.5px}
+.bar a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.callbar{display:none}
+
+@media (max-width:1100px){
+  .hero .grid,.about .grid,.contact .grid{grid-template-columns:1fr;gap:56px}
+  .hero .grid{padding:60px 0 90px}
+  .hpic{max-width:640px}
+  .hpic .sm{left:-12px}
+  .trust .grid{grid-template-columns:1fr 1fr}
+  .tr:nth-child(2){border-right:0}
+  .tr:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.14)}
+  .svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .extra{grid-template-columns:1fr}
+  .extra img{min-height:0;height:280px}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:200px}.gal figure:nth-child(5),.gal figure:nth-child(6){grid-column:span 1}.gal .h2r{grid-row:span 1}.gal .w2{grid-column:span 2}
+  footer .grid{grid-template-columns:1fr 1fr}
+  footer .grid>div:first-child{grid-column:1/-1}
+}
+@media (max-width:900px){
+  .burger{display:grid}
+  .menu{position:fixed;left:0;right:0;top:0;padding:150px 24px 36px;flex-direction:column;align-items:stretch;gap:6px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 30px 50px -30px rgba(10,47,99,.5);transform:translateY(-110%);transition:transform .45s var(--ease);z-index:-1}
+  .menu.open{transform:none}
+  .menu a:not(.btn){padding:14px 4px;font-size:20px;border-bottom:1px solid var(--line)}
+  .menu a:not(.btn)::after{display:none}
+  .menu .btn{margin-top:14px}
+  .top .r{display:none}
+  .area-wrap,.rgrid{grid-template-columns:1fr}
+}
+@media (max-width:700px){
+  body{font-size:16px;padding-bottom:76px}
+  .wrap{width:min(1200px,100% - 36px)}
+  .sec{padding:72px 0}
+  .sec-head{margin-bottom:36px}
+  .nav{min-height:78px}.logo img{height:60px}
+  .top .l{gap:12px;font-size:13px}.top .l a:nth-child(2){display:none}
+  .hero .grid{padding:44px 0 80px;gap:50px}
+  .hero .sub{font-size:17px}
+  .cta .btn{flex:1 1 100%}
+  .hpic .card{right:-4px;top:16px;padding:12px 14px}
+  .card b{font-size:19px}
+  .hpic .sm{width:48%;left:-6px;bottom:-24px}
+  .trust .grid{grid-template-columns:1fr}
+  .tr{border-right:0!important;border-bottom:1px solid rgba(255,255,255,.14);padding:22px 4px}
+  .tr:last-child{border-bottom:0}
+    .vals{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr}
+  .extra .t{padding:30px 22px}
+  .extra ul{grid-template-columns:1fr}
+  .supplies{align-items:flex-start}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:10px}.gal .w2:first-child{grid-column:span 2}
+  .gal .w2{grid-column:span 2}
+  .rc{padding:30px 24px}
+  .ac{padding:26px 22px}
+  .f2{grid-template-columns:1fr}
+  .form{padding:30px 22px;border-radius:24px}
+  .form h3{font-size:27px}
+  .cc{padding:16px}.cc b{font-size:18px}
+  footer .grid{grid-template-columns:1fr;gap:32px}
+  .bar{flex-direction:column;text-align:center}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));gap:10px;box-shadow:0 -16px 30px -20px rgba(10,47,99,.5)}
+  .callbar .btn{flex:1;padding:14px 10px;font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="nojs">
+
+<div class="top">
+  <div class="wrap">
+    <div class="l">
+      <a href="tel:2246280586"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>224-628-0586</a>
+      <a href="mailto:jandkcleaningserviceinc@gmail.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>jandkcleaningserviceinc@gmail.com</a>
+    </div>
+    <div class="r"><span>Serving the North Shore, Monday to Friday</span></div>
+  </div>
+</div>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="J&amp;K Cleaning Service Inc. home"><img src="assets/images/logo.png" alt="J&amp;K Cleaning Service Inc. Professional house cleaning services" width="115" height="74"></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i></button>
+    <nav class="menu" id="menu">
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#area">Service Area</a>
+      <a href="#rates">Rates</a>
+      <a class="btn btn-green" href="#contact">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <span class="pill rv"><i></i>Residential and office cleaning</span>
+      <h1 class="rv" style="--d:80ms">A cleaner home, <em>without</em> the chores.</h1>
+      <p class="sub rv" style="--d:160ms">Professionally trained crews who clean your house or office the right way, so you can get your time back. A pollutant free environment, delivered with honesty and integrity.</p>
+      <div class="cta rv" style="--d:240ms">
+        <a class="btn btn-green" href="#contact">Get a Free Quote <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" href="tel:2246280586"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>224-628-0586</a>
+      </div>
+      <div class="ticks rv" style="--d:320ms">
+        <span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Trained staff</span>
+        <span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Green cleaning options</span>
+        <span><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Quality check on every task</span>
+      </div>
+    </div>
+    <div class="hpic rv" style="--d:120ms">
+      <img class="main" src="assets/images/hero-family.jpg" alt="Cleaning crew tidying a bright living room" width="1200" height="800" fetchpriority="high">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.500 6 .7-4.400 4.100 1.200 5.900L12 16.300 6.700 19.200l1.200-5.900L3.500 9.200l6-.7z"/></svg></div><div><b>30+ years</b><span>of trusted cleaning</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap grid">
+    <div class="tr"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><b>Over 30 years</b><span>Residential and commercial</span></div></div>
+    <div class="tr"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16.500" cy="8" r="3"/><path d="M2 19a6 6 0 0 1 12 0"/><path d="M14.500 14.300A5.500 5.500 0 0 1 22 19"/></svg></div><div><b>Crew of three</b><span>Fast, thorough visits</span></div></div>
+    <div class="tr"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><div><b>Monday to Friday</b><span>Working through the week</span></div></div>
+    <div class="tr"><div class="ic"><svg viewBox="0 0 24 24"><path d="M20 4C9 4 4 9 4 15c0 2 1 4 3 5 6 1 13-3 13-16z"/><path d="M4 21c2-5 5-8 9-10"/></svg></div><div><b>Green options</b><span>Eco-friendly cleaning</span></div></div>
+  </div>
+</section>
+
+<section class="sec about" id="about">
+  <div class="wrap grid">
+    <div class="collage rv">
+      <img src="assets/images/office-team.jpg" alt="Cleaning team working in an office hallway" style="object-position:50% 50%" loading="lazy" width="800" height="800">
+    </div>
+    <div>
+      <span class="kicker rv">About us</span>
+      <h2 class="h2 rv">Your one stop shop for <em>cleaning</em></h2>
+      <p class="rv">J&amp;K Cleaning Service has been cleaning homes and offices for over 30 years. We built our reputation on honest work, fair prices and staff we consider among the best in the industry.</p>
+      <p class="rv">We are a company dedicated to a pollutant free environment. Our people are professionally trained, use the proper techniques and tools, and look after your space as if it were their own.</p>
+      <div class="vals">
+        <div class="val rv"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Honest, integrity-based business</div>
+        <div class="val rv" style="--d:70ms"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Specially trained staff</div>
+        <div class="val rv" style="--d:140ms"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Professional-grade equipment</div>
+        <div class="val rv" style="--d:210ms"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Plans built around your budget</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec services" id="services">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker rv">Our services</span>
+      <h2 class="h2 rv">Every room, <em>covered</em></h2>
+      <p class="lead rv">From kitchens and bathrooms to bedrooms and hallways, we clean kitchens, living rooms, dining rooms, family rooms, dens, foyers and stairways in any size home or office.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc rv"><div class="pic"><img src="assets/images/kitchen-mop.jpg" alt="Cleaner mopping a bright kitchen floor" loading="lazy"></div><div class="bd"><div class="ico"><svg viewBox="0 0 24 24"><path d="M6 3h12v6H6z"/><path d="M4 9h16v12H4z"/><path d="M9 14h6"/></svg></div><h3>Kitchen</h3><ul><li>Exterior of appliances and cabinets</li><li>Sink and countertop cleaning</li><li>Floors washed by hand</li></ul></div></article>
+      <article class="svc rv" style="--d:70ms"><div class="pic"><img src="assets/images/window-clean.jpg" alt="Person cleaning a window" loading="lazy"></div><div class="bd"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 5 6.500 5 9.500a5 5 0 0 1-10 0C7 9.500 9 7 12 3z"/></svg></div><h3>Bathroom</h3><ul><li>Sinks, toilets, tubs and showers</li><li>Shower doors, mirrors and tile</li><li>Cleaned and sanitized</li></ul></div></article>
+      <article class="svc rv" style="--d:140ms"><div class="pic"><img src="assets/images/living-mop.jpg" alt="Cleaner mopping a living room" loading="lazy"></div><div class="bd"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 17V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8"/><path d="M3 17h18v3H3z"/><path d="M6 7V5h12v2"/></svg></div><h3>Bedroom</h3><ul><li>Linens changed</li><li>Dusting throughout</li><li>Vacuuming</li></ul></div></article>
+      <article class="svc rv" style="--d:210ms"><div class="pic"><img src="assets/images/team-mopping.jpg" alt="Cleaning team mopping floors" loading="lazy" style="object-position:30% 50%"></div><div class="bd"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20L14 4"/><path d="M9 8l7 5-3 7-8-3z"/></svg></div><h3>General</h3><ul><li>Vacuuming and floor washing</li><li>Furniture, sill and ledge dusting</li><li>Cobweb removal and mirrors</li><li>Front door window and trash removal</li></ul></div></article>
+    </div>
+
+    <div class="extra rv">
+      <img src="assets/images/oven-clean.jpg" alt="Cleaner wiping the inside of an oven" loading="lazy">
+      <div class="t">
+        <h3>Extended services</h3>
+        <p>Want a deeper clean? Add any of these to your visit.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Light fixture cleaning</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Interior oven cleaning</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Interior refrigerator cleaning</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Wood floor waxing and buffing</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Interior window washing</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Garage floor sweeping</li>
+        </ul>
+      </div>
+    </div>
+    <div class="supplies rv"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>We bring all cleaning products, or happily use yours on request. We also clean vinyl, tile, marble, ceramic, terrazzo, wood and carpeted surfaces.</div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker rv">Our work</span>
+      <h2 class="h2 rv">Spotless, <em>start to finish</em></h2>
+    </div>
+    <div class="gal">
+      <figure class="w2 h2r rv"><img src="assets/images/hero-family.jpg" alt="Cleaners at work in a living room" loading="lazy"></figure>
+      <figure class="rv" style="--d:60ms"><img src="assets/images/supplies-basket.jpg" alt="Basket of eco-friendly cleaning supplies" loading="lazy"></figure>
+      <figure class="rv" style="--d:120ms"><img src="assets/images/bucket-supplies.jpg" alt="Bucket of cleaning cloths and sprays" loading="lazy"></figure>
+      <figure class="w2 rv" style="--d:180ms"><img src="assets/images/office-team.jpg" alt="Cleaning team working in an office hallway" loading="lazy"></figure>
+      <figure class="rv" style="--d:60ms"><img src="assets/images/duo-living.jpg" alt="Two cleaners tidying a living room" loading="lazy"></figure>
+      <figure class="rv" style="--d:120ms"><img src="assets/images/vacuum-home.jpg" alt="Cleaner vacuuming a room" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec rates" id="rates">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker rv" style="color:#9bdc55">Rates</span>
+      <h2 class="h2 rv">Simple, <em>honest</em> pricing</h2>
+      <p class="lead rv">Our basic price for services rendered. Book a comprehensive package or just the cleaning you need.</p>
+    </div>
+    <div class="rgrid">
+      <div class="rc f rv"><span class="tag">Standard house cleaning</span><small>First hour, crew of three</small><div class="pr"><sup>$</sup>90</div><p>The standard time for a house cleaning, with a crew of three people.</p></div>
+      <div class="rc rv" style="--d:100ms"><small>Each additional 15 minutes</small><div class="pr"><sup>$</sup>15</div><p>Add time as you need it. For example, a two hour visit comes to $150.</p></div>
+    </div>
+    <p class="rnote rv"><span>Need a plan for a regular schedule or a bigger space?</span> <b>Call 224-628-0586 for a custom quote.</b></p>
+  </div>
+</section>
+
+<section class="sec" id="area">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="kicker rv">Service area</span>
+      <h2 class="h2 rv">Proudly serving the <em>North Shore</em></h2>
+      <p class="lead rv">We are a leading office cleaning provider in the North Shore suburbs, working Monday through Friday.</p>
+    </div>
+    <div class="area-wrap">
+      <div class="ac rv">
+        <span class="day">Monday to Friday</span>
+        <h3>North Shore area</h3>
+        <p>Every weekday we service the North Shore, including:</p>
+        <div class="chips">
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Lincolnwood</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Skokie</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Evanston</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Wilmette</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Kenilworth</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Winnetka</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Glencoe</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Northfield</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Highland Park</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Deerfield</span>
+        </div>
+      </div>
+      <div class="ac alt rv" style="--d:100ms">
+        <span class="day">Tuesday</span>
+        <h3>Additional areas</h3>
+        <p>On Tuesdays we also cover:</p>
+        <div class="chips">
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Mundelein</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Hawthorn Woods</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Long Grove</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Vernon Hills</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Buffalo Grove</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Arlington Heights</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Northbrook</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Lake Bluff</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Lincolnshire</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg>Riverwoods</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact">
+  <div class="wrap grid">
+    <div>
+      <span class="kicker rv">Contact</span>
+      <h2 class="h2 rv">Ready for a <em>cleaner</em> space?</h2>
+      <p class="lead rv">Call and ask for John, or send us a note. We will put together a plan that fits your space and your budget.</p>
+      <div class="cards">
+        <a class="cc rv" href="tel:2246280586"><div class="ic"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></div><div><small>Call, ask for John</small><b>224-628-0586</b></div></a>
+        <a class="cc rv" href="mailto:jandkcleaningserviceinc@gmail.com"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><div><small>Email</small><b>jandkcleaningserviceinc@gmail.com</b></div></a>
+        <a class="cc rv" href="https://www.google.com/maps/search/?api=1&amp;query=1241+Fargo+Ave+Des+Plaines+IL+60018" target="_blank" rel="noopener"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></svg></div><div><small>Office</small><b>1241 Fargo Ave, Des Plaines, IL 60018</b></div></a>
+      </div>
+    </div>
+    <form class="form rv" id="qform" novalidate>
+      <h3>Request a free quote</h3>
+      <p>Tell us a little about your space and we will get back to you.</p>
+      <div class="f2">
+        <div class="fld"><label for="n">Your name</label><input id="n" name="name" autocomplete="name" required></div>
+        <div class="fld"><label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="fld"><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" required></div>
+      <div class="f2">
+        <div class="fld"><label for="s">Cleaning for</label><select id="s" name="type"><option>My home</option><option>My office</option></select></div>
+        <div class="fld"><label for="f">How often?</label><select id="f" name="freq"><option>Weekly</option><option>Every two weeks</option><option>Monthly</option><option>One time</option></select></div>
+      </div>
+      <div class="fld"><label for="m">Details</label><textarea id="m" name="message" placeholder="Town, size of space, extra services you would like"></textarea></div>
+      <button class="btn btn-green" type="submit">Send Request <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="fine" id="fmsg">This opens your email app with your details ready to send.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="lg"><img src="assets/images/logo.png" alt="J&amp;K Cleaning Service Inc." width="108" height="70"></div>
+        <p>Professional house and office cleaning for the North Shore suburbs. Honest work, trained staff, a pollutant free environment.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul><li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#area">Service Area</a></li><li><a href="#rates">Rates</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li>1241 Fargo Ave<br>Des Plaines, IL 60018</li><li><a href="tel:2246280586">224-628-0586</a></li><li><a href="mailto:jandkcleaningserviceinc@gmail.com">jandkcleaningserviceinc@gmail.com</a></li></ul>
+      </div>
+    </div>
+    <div class="bar"><span>&copy; 2026 J&amp;K Cleaning Service Inc. All rights reserved.</span><span>Design by <a href="https://dallaswebagency.us/" target="_blank" rel="noopener">Dallas Web Agency</a></span></div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-blue" href="tel:2246280586"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Call Now</a>
+  <a class="btn btn-green" href="#contact">Free Quote</a>
+</div>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HouseCleaningService","name":"J&K Cleaning Service Inc.","description":"Professional house and office cleaning in the North Shore suburbs of Chicago.","telephone":"+1-224-628-0586","email":"jandkcleaningserviceinc@gmail.com","address":{"@type":"PostalAddress","streetAddress":"1241 Fargo Ave","addressLocality":"Des Plaines","addressRegion":"IL","postalCode":"60018","addressCountry":"US"},"areaServed":["Lincolnwood","Skokie","Evanston","Wilmette","Kenilworth","Winnetka","Glencoe","Northfield","Highland Park","Deerfield","Mundelein","Hawthorn Woods","Long Grove","Vernon Hills","Buffalo Grove","Arlington Heights","Northbrook","Lake Bluff","Lincolnshire","Riverwoods"]}
+</script>
+<script>
+document.body.classList.remove('nojs');
+(function(){
+  var h=document.getElementById('hdr');
+  function sc(){h.classList.toggle('scrolled',window.scrollY>10)}sc();addEventListener('scroll',sc,{passive:true});
+  var b=document.getElementById('burger'),m=document.getElementById('menu');
+  function close(){m.classList.remove('open');b.setAttribute('aria-expanded','false')}
+  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  m.addEventListener('click',function(e){if(e.target.closest('a'))close()});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  }else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+  document.getElementById('qform').addEventListener('submit',function(ev){
+    ev.preventDefault();var f=ev.target,msg=document.getElementById('fmsg');
+    if(!f.name.value.trim()||!f.email.value.trim()){msg.textContent='Please add your name and email.';msg.style.color='#ffd479';return}
+    var body='Name: '+f.name.value+'\nPhone: '+f.phone.value+'\nEmail: '+f.email.value+'\nCleaning for: '+f.type.value+'\nFrequency: '+f.freq.value+'\n\n'+f.message.value;
+    location.href='mailto:jandkcleaningserviceinc@gmail.com?subject='+encodeURIComponent('Free quote request')+'&body='+encodeURIComponent(body);
+    msg.textContent='Thank you! Your email app should open now. You can also call 224-628-0586.';msg.style.color='';
+  });
+})();
+</script>
+</body>
+</html>
